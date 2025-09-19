@@ -1,0 +1,181 @@
+.dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Tabs */
+.tab-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: #0056b3;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Status-specific card colors */
+.card.unresolved {
+    background: #fff3f3;
+    border-left: 6px solid #dc3545;
+}
+
+.card.resolved {
+    background: #f3fff3;
+    border-left: 6px solid #28a745;
+}
+
+.card.assigned {
+    background: #f3f7ff;
+    border-left: 6px solid #007bff;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+.card-address,
+.card-status {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background 0.2s;
+}
+
+.btn-blue {
+    background: #007bff;
+}
+.btn-blue:hover {
+    background: #0056b3;
+}
+
+.btn-green {
+    background: #28a745;
+}
+.btn-green:hover {
+    background: #1e7e34;
+}
+
+.btn-red {
+    background: #dc3545;
+}
+.btn-red:hover {
+    background: #a71d2a;
+}
+
+.assign-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Map */
+.map-container {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Analytics */
+.analytics-container {
+    text-align: center;
+}
+
+.chart-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chart-box {
+    width: 45%;
+    min-width: 300px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.download-btn {
+    margin-top: 20px;
+}
