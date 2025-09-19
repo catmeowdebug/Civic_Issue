@@ -73,3 +73,22 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+# --- Backend Specific ---
+# Environment variables (never commit)
+.env
+
+# Local uploads folder (Render will create its own)
+uploads/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# PIDs
+pids
+*.pid
+*.seed
+*.pid.lock
